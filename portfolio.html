@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<style>
+        .horizontal{
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        padding: 0;
+    }
+    #navbar{
+        min-height:18vh;
+        background: rgb(51,103,108);
+        background: linear-gradient(90deg, rgba(51,103,108,1) 0%, rgba(50,123,131,1) 20%, rgba(46,142,154,1) 49%, rgba(35,181,214,1) 75%, rgba(0,212,255,1) 100%);
+    }
+    .horizontal li{
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .navBarButtons{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        border: 2px solid;
+    }
+    .navBarButtons:hover{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #aboutMe{
+        min-height: 40vh;
+        height: 42vh;
+        background: rgb(51,103,108);
+        background: linear-gradient(90deg, rgba(51,103,108,1) 0%, rgba(50,123,131,1) 20%, rgba(46,142,154,1) 49%, rgba(35,181,214,1) 75%, rgba(0,212,255,1) 100%);
+    }
+    .img-container{
+        display: flex;
+        margin-right: 500px;
+    }
+    .text{
+        margin-left: 30px;
+        width: 70%;
+    }
+    .contactme1{
+        margin-top: 200px;
+    }
+    #contactme{
+        min-height: 48vh;
+    }
+    .form1{
+        margin-left:26vw;
+    }
+    #ad:hover{
+        cursor: pointer;
+    }
+    #bd{
+        display: none;
+    }
+    #bd:hover{
+        cursor: pointer;
+    }
+    
+   
+    
+    
+    
+    
+    
+    @media (max-width:576px) 
+    {
+        .horizontal li{
+            margin-right: 0px;
+            margin-left: 5px;
+        }
+        .img-container{
+            display: block;
+        }
+        .text{
+            display: flex;
+            width: 100%;
+            
+        }
+    }
+
+
+</style>
+<body>
+    <section id="navbar">
+        <div class="container">
+            <ul class="horizontal">
+                <li><a class="navBarButtons" onclick="changePicture()"><b>My 2nd picture</b></a></li>
+                <li ><a href="tasks.html" class="navBarButtons"><b>Tasks</b></a></li>
+                <li><a href="./index.html" class="navBarButtons"><b>Home</b></a></li>
+                <li><a href="#contactme" class="navBarButtons"><b>Contact Me</b></a></li>
+                <li><a href="#myHobbies" class="navBarButtons"><b>My hobbies</b></a></li>
+                <li><a class="navBarButtons" onclick="darkMode()" id="ad"><b>Red Hobbies</b></a></li>
+                <li><a onclick="defaultMode()" id="bd"  class="navBarButtons">Default</a></li>
+                
+            </ul>
+        </div>  
+    </section>
+
+    <section id="aboutMe">
+        <div class="container  ">
+            <div class="col-lg-8 col-md-10 col-sm-12   img-container">
+                <img src="./images/image.png" alt="my picture" class="rounded-circle " height="300px" width="300px" id="myImg1">
+                <p class="text fw-bold">My name is Kantai Daulet. I'm 19 years old. My house is located in the western part of Astana (the outskirts of the city), in the Urker district. I study at Astana IT University. I go to bed at 11 p.m. and make sure that I get exactly 8 hours of sleep, no matter what.Before going to bed, I drink warm milk, and also spend twenty minutes warming up, so I sleep until morning without any problems.I wake up in the morning feeling neither tired nor stressed, like a baby.I'm trying to convey that I'm an ordinary person who wants to live a quiet life. I don't bother my head with problems like victories or defeats, and I don't make enemies that would keep me awake. I know for sure that happiness lies in this way of interacting with society. Although, if I had to fight, I wouldn't lose to anyone.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="myHobbies">
+        <div class="text-center mt-4 mb-5" >
+            <h1> <b>My hobbies</b></h1>
+        </div>
+        <div class="container ">
+            <div class="row " id="row3">
+                <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+                    <img src="./images/08f9d26bb36923565056df65f610f61d.jpg" alt="Chess" class="rounded-circle" height="300px" width="300px">
+                    <h2>Chess</h2>
+                </div>
+                <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+                    <img src="./images/unnamed.jpg" alt="Watching Youtube" class="rounded-circle" height="300px" width="300px">
+                    <h2>Watching youtube</h2>
+                </div>
+                <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center">
+                    <img src="./images/7IU8fBhEkSmoBQMQE4dFILEnHGXw4AQSSJDWckJ6.jpeg" alt="Video games" class="rounded-circle" height="300px" width="300px">
+                    <h2>Playing video games</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactme">
+        <div class="container ">
+            <div class="container text-center contactme1">
+                <h1 class="mb-5"><b>Contact Me</b></h1>
+            </div>
+            <form class="col-lg-4 col-sm-12 form1 d-block form1">
+                
+                <h1 class="h3 mb-3 fw-normal">You can write me</h1>
+            
+                <div class="form-floating mt-2">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
+                  <label for="floatingPassword">Name</label>
+                </div>
+                <div class="form-floating mt-2">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Message">
+                    <label for="floatingPassword">Text</label>
+                  </div>
+            
+                
+                <button class="btn btn-primary w-100 py-2" >Send</button>
+                <p class="mt-5 mb-3 text-body-secondary">© Kantai Daulet</p>
+              </form>
+              
+        </div>
+
+    </section>
+    
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

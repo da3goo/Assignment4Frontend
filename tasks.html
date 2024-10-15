@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+
+        .toDoList {
+            text-align: center;
+        }
+
+        #toDoContainer {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #taskInput {
+            width: 94%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #addButton {
+            padding: 10px;
+            width: 100%;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #addButton:hover {
+            background-color: #4cae4c;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul li.completed {
+            text-decoration: line-through;
+            background-color: #d9edf7;
+        }
+
+        
+        #task4{
+            margin-top: 50px;
+        }
+        #task4{
+            text-align: center;
+        }
+        #task4 input {
+             margin-bottom: 10px; /* добавляем отступ снизу */
+            padding: 10px;
+        }
+        #task4 button{
+            width: 80px;
+            height: 50px;
+            margin: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #task4 button:hover {
+            cursor: pointer;
+            background-color: #4cae4c;
+        }
+        #task3{
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        #task3 button{
+            width: 80px;
+            height: 50px;
+            margin: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #task3 button:hover {
+            cursor: pointer;
+            background-color: #4cae4c;
+        }
+
+        #task5{
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        #task5 button{
+            width: 80px;
+            height: 50px;
+            margin: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        #task5 button:hover {
+            cursor: pointer;
+            background-color: #4cae4c;
+        }
+
+
+        #practice{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        #toDoContainer1{
+            max-width: 400px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        #addButton1{
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+        }
+        #addButton1:hover {
+            background-color: #4cae4c;
+        }
+        #taskInput1{
+            padding: 10px;
+            width: 94%;
+        }
+    </style>
+</head>
+<body>
+
+<section id="task2">
+    <h2 class="toDoList">To-Do List</h2>
+    <div id="toDoContainer">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button id="addButton" onclick="start()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+</section>
+
+<section id="practice">
+    <div id="toDoContainer1">
+        <input type="text" placeholder="Enter a task..." id="taskInput1"><br>
+        <button id="addButton1" onclick="start1()">Add task</button> 
+        <ul id="taskList1"></ul>
+    </div>
+</section>
+
+<section id="task3">
+    <form id="numberForm">
+    <label for="numbers">Enter numbers:</label><br>
+    <input type="text" id="numbers" placeholder="e.g., 5, 3, 8, 1, 10"><br>
+    
+    <label for="order">Choose sorting order:</label><br>
+    <select id="order">
+      <option value="ascending">Ascending</option>
+      <option value="descending">Descending</option>
+    </select><br>
+    
+    <button type="button" onclick="sortNums()">Sort</button>
+    </form>
+    <h2>Result:</h2>
+    <p id="resArr"></p>
+
+
+</section>
+
+<section id="task4">
+    <h1 class="text1">Calculator!</h1>
+    <input type="number" placeholder="Enter number 1..." id="number1">
+    <input type="number" placeholder="Enter number 2..." id="number2"> <br>
+    <button onclick="plusing()">+</button>
+    <button onclick="minus()">-</button>
+    <br>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
+    <br>
+    <button onclick="clear1()">C</button>
+    <br>
+    <h2 id="calcRes"><b></b></h2>
+</section>
+<section id="task5">
+        <label>Enter the price of the car ($):</label>
+        <input type="number" placeholder="price..." id="price"><br>
+        <button onclick="taxCalculate()">Calculate tax</button>
+    <p id="resTax"></p>
+
+</section>
+
+
+<script src="fortasks.js">
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepedia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<style>
+    #header{
+        background-color: rgb(64,60,60);
+    }
+    body {
+        background-color: black;
+    }
+    .btns {
+        color: white;
+        background-color: rgb(64,60,60); 
+        border: none; 
+    }
+    .btns:hover {
+        background-color: rgb(84,80,80); 
+        color: white; 
+    }
+    .nav-link {
+        color: white !important;
+    }
+    #body1{
+        background-color: rgb(17, 17,17);
+        min-height: 200vh;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .text-on-image {
+        position: absolute;
+        bottom: 40px; 
+        left: 30%;
+        transform: translateX(-50%);
+        color: white;
+        
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .image-container {
+        position: relative;
+        text-align: center;
+    }
+    #content{
+        text-align: left;
+        min-height: 100vh;
+        width: 66%;
+        background-color: rgb(29,29,29);
+        padding: 20px;
+        color: white;
+    }
+    #company{
+      color:white;
+    }
+    #footer{
+      
+      min-height: 10vh;
+    }
+    @media (max-width:768px) {
+      #content{
+        width: 100%;
+        font-size: 12px;
+      }
+      .content-text{
+        font-size: 10px;
+      }
+      
+    }
+    
+    
+
+</style>
+<body>
+  
+    <section id="header">
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
+              
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 me-5 btn btns">News</a></li>
+                <li><a href="#" class="nav-link px-2 me-5 btn btns">Articles</a></li>
+                <li><a href="#" class="nav-link px-2 me-5 btn btns">Games</a></li>
+                <li><a href="#" class="nav-link px-2 me-5 btn btns">Forum</a></li>
+                <li><a href="./portfolio.html" class="nav-link px-2 me-5 btn btns">My Portfolio</a></li>
+              </ul> 
+        
+              <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" id="open-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignin">Sign-up</button>
+              </div>
+            </header>
+          </div>
+    </section>
+
+
+    <section id="body1" class="rounded-4">
+        <div class="px-4 pt-5 my-5 text-center ">
+            <div class="overflow-hidden col-lg-12 col-sm-12">
+              <div class="image-container px-5">
+                <img src="./images/rdr2.webp" class="img-fluid  rounded-5 shadow-lg mb-4" alt="RDR2 characters" width="1600" height="1000" >
+                <div class="text-on-image fs-4"><b>All the characters of Red Dead Redemption 2 — guide</b></div>
+              </div>
+              <div id="content" class="mt-5 rounded-4" >
+                <h3 class="ms-4  content-text"><b>Dutch Van Der Linde</b></h3>
+                <img src="./images/dutch1.png" alt="Dutch" class="img-fluid">
+                <p class="text-center text-secondary ">"They're chasing us so hard, because we represent everything that they fear."</p>
+                <h4 class="ms-1 content-text fw-normal ">Dutch Van Der Linde is the leader of a large gang of thugs and renegades. He is an idealistic, charismatic, well-read man, but at the same time, like a real anarchist, he wants to try all the joys of the modern world.</h4>
+                <br>
+                <h4 class="ms-1 content-text fw-normal ">In Red Dead Redemption, he acted as one of the main antagonists, but in the second part he is one of the main character's associates.</h4>
+                <img src="./images/dutch2.png" alt="Dutch2" class="img-fluid mt-4">
+                <p class="text-center text-secondary">Dutch Van Der Linde in Red Dead Redemption</p>
+                <img src="./images/dutch3.png" alt="Dutch3" class="img-fluid mt-4">
+                <p class="text-center text-secondary">Dutch Van Der Linde in Red Dead Redemption 2</p>
+                <!--Arthur -->
+                <h3 class="ms-4 content-text mt-5">Arthur Morgan</h3>
+                <img src="./images/arthur1.png" class="img-fluid mt-4" alt="Arthur1">
+                <p class="text-center text-secondary">"We're thieves, in a world that don't want us no more."</p>
+                <h4 class="ms-1 content text fw-normal" >The main character of Red Dead Redemption 2. Even as a child, as a boy, Arthur Morgan became the most skilled and trusted fighter in Dutch Van Der Linde's squad, so his whole life is one big criminal adventure for him.</h3>
+                <br>
+                <h4 class="ms-1 content text fw-normal">He is a cunning, calculating and ruthless man, nevertheless, having a certain code of honor. Arthur always does his job to the end.</h4>
+                <img src="./images/arthur2.png" alt="Arthur2" class="img-fluid mt-4">
+                <p class="text-center text-secondary">Arthur Morgan in Red Dead Redemption 2 </p>
+                <!-- Sadie -->
+                 <h3 class="ms-4 content-text mt-5">Sadie Adler</h3>
+                 <img src="./images/sadie1.png" alt="Sadie1" class="img-fluid mt-">
+                 <p class="text-center text-secondary">"Nobody's taking nothing from me ever again."</p>
+                 <h4 class="ms-1 content text fw-normal">A widow consumed with a thirst for revenge for her murdered husband. Sadie has nothing left to lose, which means she's not the right woman to build a relationship with. However, she appreciates her friends. This is a completely new character for the series, which appeared only in Red Dead Redemption 2.</h4>
+                 <img src="./images/sadie2.png" alt="Sadie2" class="img-fluid">
+                 <p class="text-secondary text-center"> Sadie Adler in Read Dead Remenption2</p>
+                 <!-- Sean -->
+                 <h3 class="ms-4 content-text mt-5">Sean MacGuire</h3>
+                 <img src="./images/sean1.png" alt="Sean1" class="img-fluid mt-2">
+                 <p class="text-center text-secondary">"Just leave it to me. I can talk a dog off a meat wagon"</p>
+                 <h4 class="ms-1 content text fw-normal">It was first shown in Red Dead Redemption 2, lit up in one of the trailers. He is a young and very resourceful Irish thief, whose family consisted entirely of criminals and political dissidents. He is always willing to take part in a risky adventure, and in any situation he is confident in himself. Perhaps too much..</h4>
+                 <img src="./images/sean2.png" alt="Sean2" class="img-fluid">
+                 <p class="text-secondary text-center"> Sean MacGuire in Read Dead Remenption2</p>
+                 <!-- Swanson -->
+                 <h3 class="ms-4 content-text mt-5">Reverend Swanson</h3>
+                 <img src="./images/swanson2.png" alt="Swanson" class="img-fluid mt-2">
+                 <p class="text-center text-secondary">"I had real suffering and i lost everything , my vocation , my faith, my family"</p>
+                 <h4 class="ms-1 contenttext fw-normal ">Appeared only in the second part of the series. A former priest, long gone from the ideals of his flock. Swanson has violated all the tenets that he once diligently adhered to. If he hadn't saved Dutch Van Der Linde one day, it's unlikely even thugs would have hung out with him for so long.</h4>
+                 <!-- John -->
+                  <h3 class="ms-4 content-text mt-5">John Marston</h3>
+                  <img src="./images/john.png" alt="John Marston" class="img-fluid mt-2" >
+                  <p class="text-center text-secondary">"Guess about all i got left now is doubts and scars"</p>
+                  <h4 class="ms-1 content-text  fw-normal">Having come under the wing of Dutch Van Der Linde at the age of 12, an orphan and street urchin named John always tried to live wisely. Sturdy, fearless and strong-willed, he is paired with Arthur Morgan as one of Dutch's best men. Jack Marston's own father.</h4>
+                  <br>
+                  <h4 class="ms-1 content-text fw-normal">John is the main character of the original RDR and the Undead Nightmare expansion. They can also be played in multiplayer. In Red Dead Redemption 2, this character will also be there, but it is unknown if he is playable.</h4>
+                  <img src="./images/john2.png" alt="John Marston" class="img-fluid">
+                  <p class="text-center text-secondary">John Marston in Red Dead Redemption 1</p>
+                  <img src="./images/john3.png" alt="John Marston" class="img-fluid mt-3">
+                  <p class="text-center text-secondary">John Marston in Red Dead Redemption 2</p>
+                  <!-- Micah -->
+                   <h3 class="ms-4 content-text mt-5">Micah Bell</h3>
+                   <img src="./images/micah1.png" alt="Micah " class="img-fluid">
+                   <p class="text-center text-secondary">"I believe there's winners and losers... and nothing else besides"</p>
+                   <h4 class="ms-1 content-text fw-normal">A hardened criminal and a hired killer. Wild and unpredictable, Mika Bell lives only for the thrill. It was first introduced in Red Dead Redemption 2.</h4>  
+                   <img src="./images/micah2.png" alt="Micah" class="img-fluid">
+                   <p class="text-secondary text-center">Micah Bell in Read Read Redemption 2</p>
+                   <!-- Charles -->
+                    <h3 class="ms-4 content-text mt-5">Charles Smith</h3>
+                    <img src="./images/charles1.png" alt="Charles" class="img-fluid">
+                    <p class="text-center text-secondary">"The amount of hell we've raised , we're owed some back"</p>
+                    <h4 class="ms-1 content-text fw-normal">He joined the gang relatively recently. Charles is quiet and reserved, but takes his duties very seriously, whatever they may be. He behaves decently and honestly, but in battle he becomes a truly dangerous opponent who will kill a person without any hesitation.</h4>
+                    <br>
+                    <h4 class="ms-1 content-text fw-normal">First appeared in RDR2. He is a Native American (Indian). He became a member of the Dutch gang until 1899.</h4>
+                    <img src="./images/charles2.png" alt="Charles" class="img-fluid">
+                    <p class="text-center text-secondary">Charles Smith in Read Dead Redemption 2</p>
+                    <!-- Jack Marston -->
+                    <h3 class="ms-4 content-text mt-4">Jack Marston</h3>
+                    <img src="./images/jack1.png" alt="jack" class="img-fluid">
+                    <p class="text-secondary text-center">"Did you catch the bad guys?"</p>
+                    <h4 class="ms-1 content-text fw-normal">Young Jack grew up with the gang, although his entire entourage tried to protect the young man from criminal elements. Mother Abigail worked the hardest in this field. He loves everything related to life outside of large cities, and closely monitors his numerous relatives.</h4>
+                    <br>
+                    <h4 class="ms-1 content-text fw-normal">Jack Marston is one of the central characters and concurrently the second main character in Red Dead Redemption. John Marston's own son. For it, you can play multiplayer with the Liars and Cheats add-on installed. In Red Dead Redemption 2, Jack Marston is still very young.</h4>
+                    <img src="./images/jack2.png" alt="jack" class="img-fluid mt-2">
+                    <p class="text-center text-secondary">Young Jack Marston in Read Dead Redemption 1 (right)</p>
+                    <img src="./images/jack3.png" alt="jack" class="img-fluid mt-1">
+                    <p class="text-secondary text-center">The Grown-up Jack Marston in Red Dead Redemption</p> 
+                    <img src="./images/jack4.png" alt="jack" class="img-fluid mt-1">
+                    <p class="text-secondary text-center">Jack Marston in Red Dead Redemption 2 (fourth from right, sitting on Abigail Roberts' lap)</p>
+
+
+
+                
+
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <section id="footer">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 " id="company">© 2024 Daulet</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <div class="modal" id="my-modal" style="height: 800px; width: 550px; margin-left: 600px; margin-top: 200px;">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <h1 class="fw-bold mb-0 fs-2">Sign up </h1>
+            </div>
+      
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                <hr class="my-4">
+                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                  Sign up with Twitter
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                  Sign up with Facebook
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                  Sign up with GitHub
+                </button>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    
+    <script>
+      const modal = document.getElementById("my-modal");
+      const btn = document.getElementById("open-modal");
+      const span = document.getElementsByClassName("close-button")[0];
+      
+      btn.onclick = function() {
+        modal.style.display = "block";
+      };
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      };
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
